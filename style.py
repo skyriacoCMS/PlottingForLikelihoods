@@ -1,0 +1,2 @@
+from stylefunctions import *
+tdrstyle()

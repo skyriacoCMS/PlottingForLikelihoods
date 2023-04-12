@@ -1,0 +1,41 @@
+
+ --- Running instructions  --- 
+Can run on lxplus and includes all dependencies 
+
+
+
+
+
+The process is two steps. 
+
+
+1) generate a root file for the HTT_loglinear.py script
+2) run the script. 
+
+
+
+
+Input: You need a Combine output root file that has a limit tree in it with a POI and the deltaNLL branch. 
+
+
+1) 
+Make sure your username and lxplus is included int he config.py file
+In the draw_paper.sh change the input root file to point to your input, the POI name and the general structure is
+--scan "inputfile.root" kColor kLineStyle "legendname" 
+
+multiple of these can be added to create comparison scans. 
+
+excecute the script ./draw_paper.sh 
+
+
+2) Edit the HTT_loglinear.py https://github.com/skyriacoCMS/PlottingForLikelihoods/blob/master/HTT_loglinear.py#L230
+to point to the output of the previous step. 
+number 2 in this case is the color of the line. graphnumber is important and if in the previous step you had more than one lines then you need to be careful with the order you plotted them and then here retrieving them. 
+Rest is self explanatory
+
+To run this script do: 
+
+plot HTT_loglinear.py --analysis fa3 
+
+for example 
+  

@@ -35,7 +35,7 @@ Rest is self explanatory
 
 To run this script do: 
 
-plot HTT_loglinear.py --analysis fa3 
+python HTT_loglinear.py --analysis fa3 
 
 for example 
   
